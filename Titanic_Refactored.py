@@ -21,7 +21,7 @@ from model_training import train_model
 from data_preprocessing import extract_title_from_name, add_is_alone_column, continous_category, add_categorical_columns, fill_nans
 
 def prepare_and_test_data():
-    df = pd.read_csv("/Users/aayushpuranik/Python Scripts/Dataset/Titanic Dataset/train.csv")
+    df = pd.read_csv("Dataset/train.csv")
     
     df = extract_title_from_name(df)
     df = add_categorical_columns(df)
